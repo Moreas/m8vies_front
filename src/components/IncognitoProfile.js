@@ -21,6 +21,7 @@ function IncognitoProfile() {
 
   useEffect(() => {
     checkUser()
+    // eslint-disable-next-line
   }, [])
 
   const clickUserLogin = () => {
