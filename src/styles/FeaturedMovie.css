@@ -1,0 +1,73 @@
+.featured-movie {
+  position: relative;
+}
+
+.featured-cover {
+  width: 950px;
+  object-fit: none;
+  max-height: 535px;
+  transition: 0.3s;
+}
+
+.featured-movie.featured-hidden .featured-cover {
+  transition: 0.3s;
+  max-height: 90px;
+}
+
+.featured-movie .corner-title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background: rgba(25, 25, 25, 0.3);
+  padding: 10px;
+  font-size: 13px;
+}
+
+.featured-movie.featured-hidden .corner-title {
+  display: none;
+}
+
+.featured-movie .bottom-bar {
+  position: absolute;
+  top: 445px;
+  left: 0;
+  right: 0;
+  padding: 20px 30px;
+  background: rgba(10, 10, 10, 0.8);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.featured-movie.featured-hidden .bottom-bar {
+  transition: top 0.3s;
+  top: 0px;
+}
+.bottom-bar .title-container {
+  float: left;
+  font-weight: 100;
+  font-size: 40px;
+  cursor: pointer;
+}
+.bottom-bar .title-container .fa {
+  margin-right: 10px;
+  color: #fecc00;
+}
+.bottom-bar .title-container b {
+  font-weight: 600;
+}
+.bottom-bar .right {
+  float: right;
+  font-size: 14px;
+  margin-top: 14px;
+}
+.bottom-bar .right .hide-feature-movie {
+  cursor: pointer;
+}
+.bottom-bar .right .hide-feature-movie .fa {
+  margin-right: 5px;
+}

@@ -1,0 +1,58 @@
+/* Header Styling Start */
+header {
+  height: 65px;
+  background-color: rgb(14, 14, 92);
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  width: 230px;
+  background-color: #fecc00;
+  float: left;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  line-height: 65px;
+  padding-left: 20px;
+}
+
+.top-menu {
+  background-color: #050402;
+  flex-grow: 1;
+  display: flex;
+  color: white;
+  flex-direction: row;
+  align-items: center;
+}
+
+.top-menu a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 15px 0;
+  margin: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  padding: 0 20px;
+}
+
+.menu-item:hover {
+  background-color: #ffe374;
+  color: black;
+}
+
+.active .menu-item {
+  color: #ffd000;
+}
+
+.active .menu-item:hover {
+  background-color: #050402;
+  color: #ffd000;
+}

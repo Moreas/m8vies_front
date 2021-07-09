@@ -1,0 +1,275 @@
+:root {
+  --rating-color-good: #27ae60;
+  --rating-color-meh: #f1c40f;
+  --rating-color-bad: #e74c3c;
+}
+
+.modal-overlay {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2;
+}
+
+.card {
+  width: 800px;
+  height: 480px;
+  background: transparent;
+  position: fixed;
+  left: 12vw;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border: 1px solid #5a4d00;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-shadow: 2px 0px 8px 2px #fecb0052;
+  z-index: 3;
+}
+.card_left {
+  width: 40%;
+  height: 480px;
+  float: left;
+  overflow: hidden;
+  background: transparent;
+}
+.card_left img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  position: relative;
+}
+.card_right {
+  width: 60%;
+  float: left;
+  background-color: #000000;
+  background-image: linear-gradient(160deg, #000000 0%, #0e0e0e 100%);
+  height: 480px;
+  border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+}
+
+.close {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.card_right h1 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: left;
+  font-size: 40px;
+  margin: 30px 0 0 0;
+  padding: 0 10px 0 40px;
+  letter-spacing: 1px;
+  min-height: 80px;
+}
+.card_right__fav {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 40px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.card_right__fav span {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.card_right__button a {
+  color: #fecc00;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  border: 2px solid #fecc00;
+  padding: 10px 10px 10px 40px;
+  font-size: 12px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/COMdoWZ.png);
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 7% 50%;
+  border-radius: 5px;
+}
+.card_right__button a:hover {
+  color: #000000;
+  background-color: #fecc00;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.card_right__details ul {
+  list-style-type: none;
+  padding: 0 0 0 40px;
+  margin: 10px 0 0 0;
+}
+.card_right__details ul li {
+  display: inline;
+  color: #e3e3e3;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 40px 0 0;
+}
+.card_right__review p {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  padding: 0 40px 0 40px;
+  letter-spacing: 1px;
+  margin: 10px 0 10px 0;
+  line-height: 20px;
+}
+.card_right__review a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding: 0 0 0 40px;
+  color: #ffda00;
+  margin: 0;
+}
+
+.card_right__button {
+  padding: 0 0 0 40px;
+  margin: 30px 0 0 0;
+}
+.card_right__button a {
+  color: #fecc00;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  border: 2px solid #fecc00;
+  padding: 10px 10px 10px 40px;
+  font-size: 12px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/COMdoWZ.png);
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 7% 50%;
+  border-radius: 5px;
+}
+.card_right__button a:hover {
+  color: #000000;
+  background-color: #fecc00;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.youtube {
+  border: 2px solid #302704;
+  z-index: 5;
+  margin: 10px auto;
+}
+
+.youtube-overlay {
+  width: 800px;
+  height: 480px;
+  background: black;
+  position: fixed;
+  left: 12vw;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border: 1px solid #5a4d00;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.youtube-overlay::after {
+  content: '';
+  background: url(../components/camera-backgroundl.jpg);
+  opacity: 0.05;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.youtube-title {
+  color: #727272;
+  font-family: 'Montserrat', sans-serif;
+  margin: 2px auto;
+}
+
+.youtube-close {
+  z-index: 4;
+  color: #fecb009a;
+  font-size: 40px;
+  margin: 15px auto;
+  cursor: pointer;
+}
+
+.youtube-close:hover {
+  color: #fecc00;
+}
+
+/* Rating item */
+
+.rating {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  display: flex;
+}
+
+.rating.good {
+  background: var(--rating-color-good);
+  color: var(--rating-color-good);
+}
+
+.rating.meh {
+  background: var(--rating-color-meh);
+  color: var(--rating-color-meh);
+}
+
+.rating.bad {
+  background: var(--rating-color-bad);
+  color: var(--rating-color-bad);
+}
+
+.rating span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #060606;
+  z-index: 2;
+  border-radius: 100%;
+  height: 80px;
+  width: 80px;
+  top: 10px;
+  left: 10px;
+}

@@ -1,0 +1,119 @@
+.sidebar {
+  background-color: #24282c;
+  min-width: 250px;
+}
+
+.sidebar .search-box {
+  background: #373d41;
+  padding: 20px;
+  position: relative;
+}
+.sidebar .search-box input {
+  width: 150px;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 50px;
+  outline: none;
+  color: #999;
+  transition-duration: 0.3s;
+}
+.sidebar .search-box input:focus {
+  color: #333;
+}
+.sidebar .search-box input:focus ~ .fa {
+  color: #999;
+}
+.sidebar .search-box .fa {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  color: #ccc;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.sidebar .menu {
+  padding-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(206, 206, 206);
+}
+
+.sidebar .menu a {
+  text-decoration: none;
+  color: rgb(206, 206, 206);
+}
+
+.sidebar .menu a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu .fa-film {
+  margin-right: 10px;
+  color: #ffe374;
+}
+.menu > ul > li > a:before {
+  content: '';
+  height: 7px;
+  width: 7px;
+  border-radius: 50px;
+  background-color: rgb(192, 192, 192);
+  display: inline-block;
+  margin-right: 10px;
+  box-shadow: inset 0 0 0 1px #eee;
+}
+
+.window .sidebar .menu a {
+  color: #ddd;
+  text-decoration: none;
+}
+.window .sidebar .menu a:hover {
+  color: #fff;
+}
+.window .sidebar .menu .menu-name {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14p6;
+  margin-bottom: 10px;
+}
+
+.window .sidebar .menu > ul {
+  padding: 5px;
+}
+
+.window .sidebar .menu > ul.center {
+  margin-left: 25px;
+}
+.window .sidebar .menu > ul > li {
+  list-style: none;
+}
+.window .sidebar .menu > ul > li > a {
+  position: relative;
+  top: -3px;
+  font-size: 14px;
+  padding: 10px 2px;
+  display: block;
+  font-weight: bold;
+}
+.window .sidebar .menu > ul > li > a:before {
+  content: '';
+  height: 9px;
+  width: 9px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-right: 10px;
+  box-shadow: inset 0 0 0 1px #eee;
+}
+
+.window .sidebar .menu > ul > li.active > a {
+  color: #fecc00;
+}
+
+.window .sidebar .menu > ul > li.active > a:before {
+  background: #fecc00;
+  box-shadow: none;
+}

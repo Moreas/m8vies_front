@@ -1,0 +1,35 @@
+.title-bar {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+.title-bar .left {
+  float: left;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.title-bar .left .grey {
+  color: #999;
+}
+.title-bar .left .bold {
+  font-weight: bold;
+}
+.title-bar .left p {
+  display: inline-block;
+  margin-right: 10px;
+}
+.title-bar .right {
+  margin-top: 20px;
+  float: right;
+}
+.title-bar .right a {
+  color: #999;
+  margin-left: 10px;
+}
+.title-bar .right a.black {
+  color: #000;
+}
+
+.title-bar i {
+  cursor: pointer;
+}
